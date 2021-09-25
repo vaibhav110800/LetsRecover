@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Raleway:wght@500&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:wght@700&family=Lato:wght@700&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+font-family: 'Abril Fatface', cursive;
+*/
+
+html, body {
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    /* overflow-x: hidden; */
+    overflow: visible;
+    /* overflow-y: scroll; */
+}
+
+* {
+    box-sizing: border-box;
+  }
+*:focus {
+    outline: none;
+}
+button:focus {outline:0;}
+
+
+
+/* -------------------- navbar ---------------------- */
+.navbar{
+    background-color: rgb(33, 37, 41);
+}
+.navbar-brand{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    color: whitesmoke !important;
+    transition: .2s ease-in-out;
+}
+.navbar-brand:hover{
+    color: #548ca8 !important;
+}
+.navbar-brand img{
+    width: 20px;
+    margin-right: 8px;
+}
+.nav-link{
+    margin-right: 15px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    color: whitesmoke !important;
+    transition: .2s ease-in-out;
+}
+.nav-link:hover{
+    color: #548ca8 !important;
+}
+
+/* -------------------- sec1 --------------------------- */
+
