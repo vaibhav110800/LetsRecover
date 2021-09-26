@@ -10,10 +10,10 @@ font-family: 'Abril Fatface', cursive;
 */
 
 html, body {
-    margin: 0px;
+    margin: 0;
     padding: 0;
     width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     overflow: visible;
     /* overflow-y: scroll; */
 }
@@ -26,35 +26,169 @@ html, body {
 }
 button:focus {outline:0;}
 
+/* background: rgb(0,180,216);
+    background: linear-gradient(291deg, rgba(0,180,216,1) 37%, rgba(144,224,239,1) 84%); */
+
 
 
 /* -------------------- navbar ---------------------- */
-.navbar{
-    background-color: rgb(33, 37, 41);
-}
-.navbar-brand{
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 2px;
-    color: whitesmoke !important;
+nav{
+    background: rgb(0,180,216);
+    background: linear-gradient(291deg, rgba(0,180,216,1) 37%, rgba(72,202,228,1) 84%);
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,.4);
+    height: 10vh;
+    width: 100%;
+  }
+  label.logo a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    color: white;
+    font-size: 25px;
+    line-height: 10vh;
+    padding: 0 40px;
+    font-weight: 700;
     transition: .2s ease-in-out;
-}
-.navbar-brand:hover{
-    color: #548ca8 !important;
-}
-.navbar-brand img{
-    width: 20px;
-    margin-right: 8px;
-}
-.nav-link{
-    margin-right: 15px;
+  }
+  label.logo a:hover{
+    color: #0096c7;
+    background-color: transparent;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 6vh;
+    margin: 0 5px;
+  }
+  nav ul li a{
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
-    color: whitesmoke !important;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 8px;
+    text-transform: uppercase;
     transition: .2s ease-in-out;
-}
-.nav-link:hover{
-    color: #548ca8 !important;
-}
+  }
+  a:hover{
+    background: #0096c7;
+    color: white;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 10vh;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #03045e;
+      top: 7%;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
 
 /* -------------------- sec1 --------------------------- */
+.sec1{
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 89vh;
+    display: flex;
+}
+
+.sec1-left{
+    transform: translate(-3%, -4%);
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sec1-left h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #03045e;
+    margin-bottom: 1px;
+    letter-spacing: 1.5px;
+    font-size: 64px;
+}
+.sec1-left h2{
+    font-family: 'Poppins', sans-serif;
+    color: #00b4d8;
+    margin-bottom: 1px;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    text-align: justify;
+}
+.sec1-left p{
+    font-family: 'Raleway', sans-serif;
+    color: #023e8a;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    font-weight: 700;
+}
+.sec1-left a{
+    background: rgb(0,180,216);
+    background: linear-gradient(291deg, rgba(0,180,216,1) 37%, rgba(72,202,228,1) 84%);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+    padding: 15px 25px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    font-weight: 700;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 4px 8px 0px;
+    transition: .2s ease-in-out;
+}
+.sec1-left a:hover{
+    box-shadow: rgba(99, 99, 99, 0.7) 0px 4px 8px 0px;
+}
+.sec1-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 60%;
+}
+.sec1-right img{
+    width: 750px;
+}
 
