@@ -189,6 +189,7 @@ nav{
     flex-basis: 60%;
 }
 .sec1-right img{
+    transform: translateX(4%);
     width: 750px;
 }
 
